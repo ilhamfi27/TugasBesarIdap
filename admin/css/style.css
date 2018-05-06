@@ -108,6 +108,15 @@ table.form-layout label {
     display: block;
     clear: both;
 }
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -181,20 +190,39 @@ table.form-layout label {
     float: left;
     width: 100%;
 }
-.label-info {
-    color: #FFFFFF;
-    background: #269abc!important;
-    border-color: #1b6d85;
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  border-radius: .25em;
 }
-.label-warning {
+.label-default {
     color: #FFFFFF;
-    background: #ec971f!important;
-    border-color: #d58512;
+    background-color: #777!important;
+}
+.label-primary {
+    color: #FFFFFF;
+    background-color: #337ab7!important;
 }
 .label-success {
     color: #FFFFFF;
-    background: #398439!important;
-    border-color: #255625;
+    background: #5cb85c!important;
+}
+.label-info {
+    color: #FFFFFF;
+    background: #5bc0de!important;
+}
+.label-warning {
+    color: #FFFFFF;
+    background: #f0ad4e!important;
+}
+.label-danger {
+    color: #FFFFFF;
+    background-color: #d9534f!important;
 }
 .pagination {
     display: inline-block;

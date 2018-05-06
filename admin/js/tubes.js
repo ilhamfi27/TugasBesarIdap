@@ -13,3 +13,7 @@ $(".sidebar-dropdown").click(function() {
 		comp.addClass("fa-angle-left");
 	}
 });
+$("input[name='select-all']").click(function() {
+	var select = $("input[name='selections']");
+	select.prop('checked', $(this).prop('checked'));
+});
