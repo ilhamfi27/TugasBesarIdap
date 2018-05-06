@@ -395,10 +395,14 @@ img.icon {
 }
 /*---------------------------------------------------------*/
 .konten-artikel {
+  padding: 20px 10px;
   border-bottom: 3px #000000 solid;
 }
 .konten-artikel > p{
   text-align: justify;
+}
+.konten-artikel > h3 {
+  margin: 0px;
 }
 #info-lain {
   box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.4);
@@ -463,4 +467,87 @@ img.icon {
   height: 100px;
   margin: 30px 0px 0px 0px;
   float: left;
+}
+
+
+/*-------------------------------Tambahan----------------------------*/
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+.panel-berita {
+  box-shadow: 0px 0px 7px 0px rgba(199,199,199,1);
+  min-height: 1px;
+}
+.panel-header, .panel-footer {
+  padding: 8px 20px;
+}
+.panel-header {
+  border-bottom: 3px #000000 solid;
+}
+.panel-footer {
+  border-top: 2px #000000 solid;
+}
+.list-berita {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 7px;
+  list-style-type: none;
+  min-height: 1px;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+.list-berita a {
+  color: #000000;
+  display: block;
+  float: left;
+}
+.news-thumbnails {
+  width: 100px;
+  max-height: 150px;
+  display: block;
+}
+.berita {
+  width: 100%;
+}
+.news-title {
+  margin: 0px;
+  display: block;
+}
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a {
+  color: #000000;
+  position: relative;
+  float: left;
+  padding: 6px 9px;
+  margin-left: -1px;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.link-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.link-list > li {
+  display: block;
+}
+.link-list > li > a {
+  padding: 7px 15px;
+  display: block;
+  color: #000000;
+}
+#clear {
+  clear: both;
 }
