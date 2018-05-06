@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KIP Kabupaten Bandung</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <a href="admin_dashboard.html" class="logo">
+                    <span class="logo-lg">ADMIN</span>
+                </a>
+                <nav class="navbar">
+                    <div class="navbar-menu">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <i class="far fa-envelope"></i>
+                                    <span class="badge color-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 4 messages</li>
+                                    <li>
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    asdasdasdasdasdasdasd
+                                                </a>
+                                                <a href="#">
+                                                    asdasdasdasdasdasdasd
+                                                </a>
+                                                <a href="#">
+                                                    asdasdasdasdasdasdasd
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">See All Messages</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <i class="far fa-bell"></i>
+                                    <span class="badge color-success">10</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="user-header">
+                                        <img src="img/user.png" width="100" class="rounded-user-photo bordered-photo">
+                                        <p>John Doe - Staf Diskominfo</p>
+                                    </li>
+                                    <li class="user-footer">
+                                        <button class="btn pull-right">Logout</button>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <img src="img/user.png" class="rounded-user-photo">
+                                    <span class="user-button">John Doe</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="user-header">
+                                        <img src="img/user.png" width="100" class="rounded-user-photo bordered-photo">
+                                        <p>John Doe - Staf Diskominfo</p>
+                                    </li>
+                                    <li class="user-footer">
+                                        <button class="btn pull-right">Logout</button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <ul class="sidebar-nav">
+                        <li>
+                            <a href="admin_dashboard.html">
+                                <i class="fa fa-tachometer-alt"></i> Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-file-alt"></i>Input Data
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="InputBerita.html">
+                                        <i class="far fa-circle"></i>Input
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ListArtikel.html">
+                                        <i class="far fa-circle"></i>List Data
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-users"></i>Manage Staff
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="ManageStaff.html">
+                                        <i class="far fa-circle"></i>Tambah
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ListStaff.html">
+                                        <i class="far fa-circle"></i>List Staff
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="content-wrapper">
+                <div class="content">
+                    <div class="box-content">
+                    <div class="posttitle"> Manage Staff </div>
+                        <div class="post">
+                            <div class="cari">
+                                <input type="text" name="search">
+                            </div>
+                            <table border="0" cellspacing="0" class="tabel-data-admin">
+                                <tr>
+                                    <td class="checklists" bgcolor="#367fa9"><input type="checkbox" name="select-all"></td>
+                                    <td class="username" bgcolor="#367fa9">Username</td>
+                                    <td class="aksi" bgcolor="#367fa9">Aksi</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="checklists"><input type="checkbox" name="select-all"></td>
+                                    <td class="usernamee">Lorem Ipsum</td>
+                                    <td class="aksii"><button type="button" class="btn btn-danger aksii">hapus</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="checklists"  bgcolor= "#e1e1d0"><input type="checkbox" name="select-all"></td>
+                                    <td class="usernamee"  bgcolor= "#e1e1d0">Lorem Ipsum</td>
+                                    <td class="aksii" bgcolor= "#e1e1d0"><button type="button" class="btn btn-danger aksii">hapus</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="checklists"><input type="checkbox" name="select-all"></td>
+                                    <td class="usernamee">Lorem Ipsum</td>
+                                    <td class="aksii"><button type="button" class="btn btn-danger aksii">hapus</button></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="checklists"  bgcolor= "#e1e1d0"><input type="checkbox" name="select-all"></td>
+                                    <td class="usernamee"  bgcolor= "#e1e1d0">Lorem Ipsum</td>
+                                    <td class="aksii" bgcolor= "#e1e1d0"><button type="button" class="btn btn-danger aksii">hapus</button></td>
+                                </tr>
+
+                                <input type="submit" name="tambahkan" value="tambahkan">
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/tubes.js"></script>
+        <script type="text/javascript" src="js/Chart.min.js"></script>
+        <script type="text/javascript">
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Kesehatan", "Kepegawaian", "Ketenaga Kerjaan", "Pertanian", "Pendidikan"],
+                    datasets: [{
+                        label: 'Post Dilihat',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
