@@ -76,12 +76,14 @@ img.icon {
   position: absolute;
   left: 20px;
   top: 20px;
-  width: 120px;
+  /*width: 120px;*/
+  width: 10%;
   margin-left: 0%;
   margin-top: 0%;
 }
 .search-box {
-  width: 300px;
+  width: 100%;
+  max-width: 250px;
   padding: 6px 12px;
   border-color: transparent;
   border-radius: 7px;
@@ -369,19 +371,18 @@ img.icon {
 /*--------------------footer----------------------*/
 #footer-black {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   background-color: #000000;
   float: left;
 }
 /*------------------footer-alamat-----------------*/
 #footer-alamat  {
-  /*float: left;*/
   width: 100%;
+  text-align: center;
 }
 #footer-alamat > p {
   font-size: 15px;
   color: white;
-  padding: 10% 0 0 10%;
 }
 /*------------------footer-artikel-----------------*/
 #footer-artikel  {
@@ -460,13 +461,14 @@ img.icon {
 /*--------------------container-form----------------------*/
 #container-form {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   min-height: 400px;
   background-color: #FFFFFF;
   margin: 0px auto;
-  padding: 0% 3% 0% 3%;
+  /*padding: 0% 3% 0% 3%;*/
+  padding: 20px 0;
+  overflow: hidden;
 }
-
 /*------------------konten-form--------------------*/
 #konten-form{
   float: left;
@@ -481,8 +483,7 @@ img.icon {
   float: left;
   width: 90%;
   height: 100px;
-  margin: 30px 0px 0px 0px;
-  float: left;
+  margin: 30px 20px;
 }
 
 
@@ -496,6 +497,7 @@ img.icon {
 .panel-berita {
   box-shadow: 0px 0px 7px 0px rgba(199,199,199,1);
   min-height: 1px;
+  margin-bottom: 20px;
 }
 .panel-header, .panel-footer {
   padding: 8px 20px;
@@ -505,6 +507,8 @@ img.icon {
 }
 .panel-footer {
   border-top: 2px #000000 solid;
+  min-height: 1px;
+  display: block;
 }
 .list-berita {
   padding: 0px;
@@ -566,4 +570,49 @@ img.icon {
 }
 #clear {
   clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar-header > p {
+    font-size: 23px;
+  }
+  #navbar-menu > ul > li > a {
+    font-size: 15px;
+  }
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    width: 100%;
+  }
+  #footer-artikel > p {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 3% 0 0 0;
+  }
+  #footer-link  {
+    padding: 3% 0 0 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #navbar-header > p {
+    font-size: 20px;
+    margin: 0 20%;
+  }
+  #navbar-menu > ul > li:last-child {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px){
+  #navbar-header > p {
+    font-size: 18px;
+  }#navbar-menu > ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  #navbar-menu >ul >li{
+    float: none;
+  }
+  #navbar-menu >ul >li >a{
+    float: none;
+  }
 }
