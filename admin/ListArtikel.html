@@ -233,64 +233,160 @@
             <div class="content-wrapper">
                 <div class="content">
                     <div class="box-content">
-                        <div class="posttitle"> List Data Artikel </div>
-                        <div class="post">
-                            <table border="0" cellspacing="0" class="tabel-data-admin">
-                                <tr>
-                                    <td class="checklists" bgcolor="#367fa9"><input type="checkbox" name="select-all"></td>
-                                    <td class="judul" bgcolor="#367fa9">Judul</td>
-                                    <td class="aksi" bgcolor="#367fa9">Aksi</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls">Berita terkini</td>
-                                    <td class="aksii"> <button type="button" class="btn btn-danger aksii" color="red">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists" bgcolor= "#e1e1d0"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls" bgcolor= "#e1e1d0">Berita kemarin</td>
-                                    <td class="aksii" bgcolor= "#e1e1d0"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls">Berita besok</td>
-                                    <td class="aksii"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists" bgcolor= "#e1e1d0"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls" bgcolor= "#e1e1d0">Pengumuman kemarin</td>
-                                    <td class="aksii" bgcolor= "#e1e1d0"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls">Pengumuman Terkini</td>
-                                    <td class="aksii"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists" bgcolor= "#e1e1d0"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls" bgcolor= "#e1e1d0">Pengumuman besok</td>
-                                    <td class="aksii" bgcolor= "#e1e1d0"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-                                <tr>
-                                    <td class="checklists"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls">Informasi Terupdate</td>
-                                    <td class="aksii"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-
-
-                                <tr>
-                                    <td class="checklists"  bgcolor= "#e1e1d0"><input type="checkbox" name="selections"></td>
-                                    <td class="juduls"  bgcolor= "#e1e1d0">Informasi Terupdate</td>
-                                    <td class="aksii" bgcolor= "#e1e1d0"> <button type="button" class="btn btn-danger aksii">Update</button><button type="button" class="btn btn-warning aksii">hapus</button></td>
-                                </tr>
-                            </table>
+                        <span class="box-title">Daftar Artikel</span>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col-5 pull-right">
+                                    <div class="form-group">
+                                        <form>
+                                            <input type="text" name="search" class="col-9 form-control">
+                                            <input type="submit" name="search" value="search" class="btn btn-primary col-3">
+                                        </form>
+                                    </div>
+                                </div>
+                                <table class="col-12 data-table">
+                                    <tr>
+                                        <th><input type="checkbox" name="select-all"></th>
+                                        <th>Judul</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Berita terkini</a>
+                                        </td>
+                                        <td>
+                                            <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                            <button type="button" class="btn btn-danger aksii">hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Berita kemarin</a>
+                                        </td>
+                                        <td>
+                                            <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                            <button type="button" class="btn btn-danger aksii">hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Berita besok</a>
+                                        </td>
+                                        <td>
+                                            <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                            <button type="button" class="btn btn-danger aksii">hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Pengumuman kemarin</a>
+                                        </td>
+                                        <td>
+                                            <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                            <button type="button" class="btn btn-danger aksii">hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Pengumuman Terkini</a>
+                                        </td>
+                                        <td>
+                                            <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                            <button type="button" class="btn btn-danger aksii">hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Pengumuman besok</a>
+                                        </td>
+                                        <td>
+                                            <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                            <button type="button" class="btn btn-danger aksii">hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Informasi Terupdate</a>
+                                        </td>
+                                        <td>
+                                             <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                             <button type="button" class="btn btn-danger aksii">hapus</button>
+                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="selections">
+                                        </td>
+                                        <td>
+                                            <a href="DetailBerita.html">Informasi Terupdate</a>
+                                        </td>
+                                        <td>
+                                             <a href="UpdateInformasi.html"><button type="button" class="btn btn-warning aksii">Update</button></a>
+                                             <button type="button" class="btn btn-danger aksii">hapus</button>
+                                         </td>
+                                    </tr>
+                                </table>
+                                <div class="table-footer pull-right">
+                                    <ul class="pagination pull-right">
+                                        <li>
+                                            <a href="#">
+                                                &laquo;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                4
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                5
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                &raquo;
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
