@@ -129,13 +129,13 @@ img.icon {
   text-decoration: none;
   list-style: none;
   text-align: center;
+  position: relative;
 }
 #navbar-menu >ul >li >a{
   float: left;
   padding: 15px;
   border-radius: 10px;
   color: white;
-  font-size: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -143,7 +143,36 @@ img.icon {
 #navbar-menu > ul > li > a:hover{
   background-color: white;
   color: black;
-  transition:0,8; 
+  transition:0.8; 
+}
+#navbar-menu > ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 12;
+  list-style-type: none;
+  top: 47px;
+  padding-left: 0px;
+}
+#navbar-menu > ul > li:hover > ul {
+  display: block;
+}
+#navbar-menu > ul > li > ul > li {
+  position: relative;
+  z-index: 100;
+}
+#navbar-menu > ul > li > ul > li > a {
+  display: block;
+  padding: 9px 12px;
+  min-width: 200px;
+  min-height: 30px;
+  color: #ffffff;
+  background: #000000;
+}
+#navbar-menu > ul > li > ul > li:last-child > a {
+  border-radius: 0px 0px 10px 10px;
+}
+#navbar-menu > ul > li > ul > li > a:hover {
+  background: #272727;
 }
 /*-----------------header-index------------------*/
 #header {
@@ -170,7 +199,7 @@ img.icon {
     position: absolute;
     top: 400px;
     /*left: 25%;*/
-    z-index: 10;
+    z-index: 9;
     text-align: center;
     font-size: 30px;
     color: #FFFFFF;
@@ -567,6 +596,34 @@ img.icon {
   padding: 7px 15px;
   display: block;
   color: #000000;
+}
+.list-dinas {
+  list-style-type: none;
+  padding: 0px 15px;
+  border: 1px #000000 solid;
+  border-radius: 0 10px;
+}
+.list-dinas > li.header {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px #000000 solid;
+}
+.list-dinas > li:last-child {
+  padding-bottom: 10px;
+}
+.list-dinas > li > a {
+  padding: 4px 0;
+  display: block;
+  color: #000000;
+}
+.page-title {
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px #000 solid;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
 }
 #clear {
   clear: both;
